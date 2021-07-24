@@ -1,0 +1,28 @@
+{% extends 'layouts/layout.html' %}
+{%load static%}
+{%block content%}
+<div class='cuerpo'>
+<h2>
+Cual vas a correr??</h2>
+
+    <div class= "resultados">
+      <ul class= "result">
+        {%for carrera in miFiltro.qs%}
+              <div class="resultado">
+                <div class="resultado-header"><a href='{{carrera.web}}'>{{carrera.nombre}}</a></div>
+                <hr>
+                <div class="resultado-body">
+                    <li><i class="fas fa-calendar-check" style="margin-right: 10px;"></i>{{carrera.fecha}}</li>
+                    <li><i class="fas fa-road" style="margin-right: 10px;"></i>{{carrera.superficie}}</li>
+                    <li><i class="fas fa-flag-checkered" style="margin-right: 15px;"></i>{{carrera.distancia_real}}</li>
+                    <li><i class="fas fa-location-arrow" style="margin-right: 20px;"></i>{{carrera.region}}</li>
+                    <li><a href='{{carrera.web}}'>{{carrera.web}}</a></li>
+                    <li><button>Inscribete</button></li>
+
+                </div>
+              </div>
+        {%endfor%}
+      </ul>
+    </div>
+</div>    
+{%endblock%}

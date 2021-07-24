@@ -1,0 +1,182 @@
+@media screen and ( max-width:425px) {
+    header{
+      width: 100%;
+    }
+    nav{
+      width: 100%;
+      height: 30px;
+    }
+    nav label{
+      padding: 2px 8px;
+    }
+    #logotipo{
+      width: 20%;
+      height: 30px;
+    }
+    #logotipo img{
+      width: 52px;
+      height: 30px;
+    }
+    #titulo{
+      margin-right: 36px;
+    }
+    #titulo h1{
+      font-size:20px;
+    }
+    .menu{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1000;
+      margin-top: 30px;
+      display: none;
+    }
+    
+    .menu ul{
+      margin-right: 0;
+      flex-direction: column;
+      width: 100%;
+      background-color: #5ad67dda;
+      padding: 50px 0px;
+      color: rgba(14, 37, 240, 0.739);
+
+    }
+
+    .menu ul li {
+      width: 100%;
+      height: 40%;
+      margin: auto;
+      border-left: none;
+
+
+    }  
+    .menu ul li a{
+      color: rgba(14, 37, 240, 0.739);
+      font-size: 30px;
+      text-align: center;
+    }
+    nav label{
+      display: block;
+      height: 30px;
+      padding: 0;
+      
+    }
+    
+    #boton-menu:checked ~ .menu {
+      z-index: 999;
+      display: flex;
+    }
+    a{
+      text-decoration: none;
+      color: rgba(14, 37, 240, 0.739);
+    }
+    
+    .mifiltro{
+        margin-bottom: 15px;
+        margin-left: auto;
+    }
+    .minibusca{
+        display: flex;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        height: 40px;
+        background-color: burlywood;
+        justify-content: center;
+      }
+    .minibusca a{
+        align-items: center;
+        margin-top: auto;
+        margin-left: 4px;
+        color: white;
+    }  
+    .minibusca h4{
+        align-items: center;
+        margin-top: auto;
+        margin-left: 4px;
+    }
+    .minibusca button {
+        border-radius: 10px;
+        margin: 4px;}    
+    #busca_tu_carrera:checked ~ #buscador{
+      display: block;
+      padding-bottom: 30px;
+    }
+    #buscador{
+      display: none;
+    }
+    input #busca_tu_carrera{
+      display: none
+    }
+    #prox_carrera{
+      display: block;
+      background-color: burlywood;
+      text-align: center;
+      padding: 5px;
+      color: aliceblue;
+      border-radius: 0px 0px 10px 10px;
+    }
+    #buscador_carreras h4{
+      display: none;
+    }
+    #buscador label{
+      width: 23%;
+      height: 20px;
+      color: aliceblue;}
+    #buscador #id_nombre{
+      width: 72%;
+      height: 20px;}
+    #buscador #id_distancia{
+      width: 72%;
+      height: 20px;}
+    #buscador #id_superficie{
+      width: 72%;
+      height: 20px;}
+    #buscador #id_region{
+      width: 72%;
+      height: 20px;}
+    #buscador #id_fecha_inicio{
+      width: 72%;
+      height: 20px;}
+    #buscador #id_fecha_fin{
+      width: 72%;
+      height: 20px;}
+    form button{
+      display: block;
+      float: right;
+      margin-right: 40px;
+      font-size: small;
+      border-radius: 50%;
+      border: 0px;
+      transition: 0.1s;
+      margin-top: 5px;
+    }
+    
+    #container{
+      width: 100%;
+      border-right: none;
+    }
+
+    .Proximas_carreras{
+        display: none;
+    }
+  
+    .blog-card .meta {
+        position: relative;
+        z-index: 0;
+        height: 100px;
+    }
+    .blog-card{
+      margin-right: 0px ;
+      margin-bottom: 15px;
+      width: 100%;
+    }
+  .resultado{
+    width: 100%;
+  }
+  .result{
+    padding-left: 0px;
+  }
+
+
+}
+

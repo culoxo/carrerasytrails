@@ -1,0 +1,42 @@
+{% extends 'layouts/layout.html' %}
+{%load static%}
+{%block content%}
+
+<div class="blog-card">
+  <div class="meta">
+    <div class="photo" style="background-image: url(../../static/images/LineaSalida.jpg)"></div>
+    <ul class="details">
+      <li class="author">David</a></li>
+      <li class="date">17 Julio 2021</li>
+    </ul>
+  </div>
+  <div class="description">
+    <h1>Casilla de salida</h1>
+    <p>Por moverte, por adelgazar, porque te anima un amigo, porque …. todos tenemos un por qué. El caso es que rebuscas en el armario la camiseta de tu equipo favorito y un pantalón corto. Unas zapatillas cualesquiera y a correr.  
+       </p>
+    <p class="read-more">
+      <a href="{% url 'salida' %}">Leer más</a>
+    </p>
+  </div>
+</div>
+<div class="blog-card alt">
+  <div class="meta">
+    <div class="photo" style="background-image: url('../../static/images/caminoMontana.png')"></div>
+    <ul class="details">
+      <li class="author">Javier</li>
+      <li class="date">17 Julio 2021</li>
+      <li class="tags">
+      </li>
+    </ul>
+  </div>
+  <div class="description">
+    <h1>Del asfalto a la montana</h1>
+    <p>Los aficionados al deporte al aire libre solemos dar nuestros primeros pasos en la montaña después de haber estado unos cuantos años corriendo por el asfalto, una especialidad más generalizada y a veces, explosiva, que requiere menos estudio, precauciones, material etc. 
+    </p>
+    <p class="read-more">
+      <a href="{% url 'montana' %}">Leer mas</a>
+    </p>
+  </div>
+</div>
+ 
+{%endblock%}
