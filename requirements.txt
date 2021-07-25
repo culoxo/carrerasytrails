@@ -13,6 +13,7 @@ django-bootstrap4==3.0.1
 django-filter==2.4.0
 django-sass==1.0.1
 django-widget-tweaks==1.4.8
+django-heroku
 filelock==3.0.12
 Flask==1.1.2
 Flask-MySQL==1.5.2
