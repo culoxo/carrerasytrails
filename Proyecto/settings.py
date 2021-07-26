@@ -26,7 +26,7 @@ SECRET_KEY = 'nm5lisac-@g4fs*r3n02661_t^&na)d*6r-)zscv=lb4cqmvag'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -126,5 +126,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-STATIC_DIRS = (os.path.join(BASE_DIR, '/static/'))
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'))
 STATIC_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
