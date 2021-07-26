@@ -23,7 +23,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('inicio/', views.index, name="index"),
-    path('/favicon.ico', views.index, name="inicio"),
+    path('/favicon.ico', views.index, name="index"),
+    path('/', views.index, name="index"),
     path('blog/', views.blog, name='blog'),
     path('blog/casilla-de-salida/', views.salida, name='salida'),
     path('blog/a-la-montana/', views.montana, name='montana'),
